@@ -7,161 +7,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;500&family=Poppins:wght@200;400&display=swap" rel="stylesheet">
-    
-    <style>
-        :root {
-            --bg-overlay: rgba(252, 250, 247, 0.85); /* 溫馨米白毛玻璃覆蓋 */
-            --text-main: #4a4038; /* 暖調深炭灰 */
-            --text-sub: #7a6e63; /* 莫蘭迪棕灰 */
-            --accent: #d2c2b0; /* 櫻花落葉大地色 */
-        }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        
-        body {
-            font-family: 'Poppins', 'Noto Serif TC', serif;
-            color: var(--text-main);
-            line-height: 1.8;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            padding: 20px;
-            position: relative;
-            overflow-x: hidden;
-            /* 將【第二張櫻花靠樹圖】設為全螢幕背景 */
-            background: url('images/cherry-blossoms.png') no-repeat center center fixed;
-            background-size: cover;
-        }
-        
-        /* 網頁背景的磨砂玻璃包覆層，讓唯美背景不干擾文字閱讀 */
-        body::before {
-            content: '';
-            position: absolute;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background-color: var(--bg-overlay);
-            backdrop-filter: blur(5px);
-            z-index: 1;
-        }
-
-        /* 主容器 */
-        .container {
-            position: relative;
-            z-index: 2; /* 確保內容在背景層之上 */
-            max-width: 550px;
-            width: 100%;
-            text-align: center;
-            background: rgba(255, 255, 255, 0.7);
-            padding: 40px 30px;
-            border-radius: 16px;
-            box-shadow: 0 10px 30px rgba(122, 110, 99, 0.05);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.5);
-        }
-
-        /* 看板娘形象插圖空間（放置第一張去背圖） */
-        .avatar-container {
-            width: 160px;
-            height: 160px;
-            margin: 0 auto 25px auto;
-            border-radius: 50%;
-            overflow: hidden;
-            border: 4px solid #ffffff;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.06);
-            background-color: #f5f0eb;
-        }
-        .avatar-container img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: top; /* 聚焦在少女面部 */
-        }
-
-        .logo-space {
-            font-size: 2rem;
-            font-weight: 500;
-            letter-spacing: 4px;
-            margin-bottom: 15px;
-        }
-        .description {
-            font-size: 0.95rem;
-            font-weight: 300;
-            color: var(--text-sub);
-            margin-bottom: 35px;
-            letter-spacing: 1px;
-        }
-        .links-group {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-            margin-bottom: 50px;
-        }
-        .btn {
-            display: block;
-            padding: 12px;
-            border: 1px solid var(--accent);
-            border-radius: 6px;
-            color: var(--text-main);
-            text-decoration: none;
-            font-size: 0.9rem;
-            letter-spacing: 2px;
-            transition: all 0.3s ease;
-            background: rgba(255, 255, 255, 0.5);
-        }
-        .btn:hover {
-            background-color: var(--text-main);
-            color: #ffffff;
-            border-color: var(--text-main);
-            transform: translateY(-2px);
-        }
-        footer {
-            font-size: 0.75rem;
-            color: #a69b8f;
-            letter-spacing: 1px;
-        }
-        footer a {
-            color: var(--text-sub);
-            text-decoration: none;
-            border-bottom: 1px dotted var(--accent);
-            cursor: pointer;
-        }
-        
-        /* 法務彈出視窗保持高防禦規格 */
-        .modal {
-            display: none;
-            position: fixed;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background-color: rgba(74, 64, 56, 0.6);
-            backdrop-filter: blur(8px);
-            justify-content: center; align-items: center;
-            padding: 20px; z-index: 1000;
-        }
-        .modal-content {
-            background-color: #ffffff;
-            padding: 35px; border-radius: 12px;
-            max-width: 600px; max-height: 80vh; overflow-y: auto;
-            text-align: left; box-shadow: 0 20px 50px rgba(0,0,0,0.15);
-        }
-        .modal-title {
-            font-size: 1.15rem; font-weight: 500; margin-bottom: 20px;
-            border-bottom: 1px solid #eee; padding-bottom: 10px;
-        }
-        .modal-text {
-            font-size: 0.85rem; color: #555; white-space: pre-line;
-            font-family: 'Poppins', sans-serif; line-height: 1.6;
-        }
-        .close-btn {
-            display: inline-block; margin-top: 25px; padding: 8px 20px;
-            background-color: var(--text-main); color: white;
-            border: none; border-radius: 4px; cursor: pointer; font-size: 0.85rem;
-        }
-    </style>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/main.js" defer></script>
 </head>
 <body>
 
     <div class="container">
-        <!-- 圓形頭像：置入第一張去背少女圖 -->
         <div class="avatar-container">
-            <img src="images/avatar.png" alt="熙の日記 看板娘">
+            <img src="assets/images/avatar.png" alt="熙の日記 看板娘">
         </div>
         
         <div class="logo-space">熙の日記</div>
@@ -171,6 +24,10 @@
             正在把城市夜色與發呆時的呼吸，一頁一頁寫進日常的 Lo-fi 旋律裡。
         </p>
 
+        <div class="playlist-embed">
+            <iframe src="https://www.youtube.com/embed/videoseries?si=89TCRjZGggHutukW&amp;list=PLISfAGf85s-c" title="熙の日記 YouTube 播放清單" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
         <div class="links-group">
             <a href="https://youtube.com/@azusawa-hikari" target="_blank" class="btn">YOUTUBE 頻道連結</a>
             <a href="#" target="_blank" class="btn">SPOTIFY 準備中</a>
@@ -178,26 +35,16 @@
         </div>
 
         <footer>
-            © 2026 熙の日記 Studio. All rights reserved. | <a onclick="openModal()">Legal Desk</a>
+            © 2026 熙の日記 Studio. All rights reserved. | <button class="legal-link" type="button" id="legalDeskButton">Legal Desk</button>
         </footer>
     </div>
 
-    <!-- 隱蔽的法務彈出視窗 -->
-    <div id="legalModal" class="modal">
+    <div id="legalModal" class="modal" aria-hidden="true">
         <div class="modal-content">
             <div class="modal-title">版權宣告</div>
             <div class="modal-text">版權所有,翻印必究</div>
-            <button class="close-btn" onclick="closeModal()">關閉視窗 / Close</button>
+            <button class="close-btn" type="button" id="closeLegalModalButton">關閉視窗 / Close</button>
         </div>
     </div>
-
-    <script>
-        function openModal() { document.getElementById('legalModal').style.display = 'flex'; }
-        function closeModal() { document.getElementById('legalModal').style.display = 'none'; }
-        window.onclick = function(event) {
-            let modal = document.getElementById('legalModal');
-            if (event.target == modal) { modal.style.display = 'none'; }
-        }
-    </script>
 </body>
 </html>
