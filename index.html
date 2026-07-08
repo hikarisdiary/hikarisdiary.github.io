@@ -1,21 +1,17 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
-    <meta name="google-site-verification" content="qSPpxJaO2s6dwS7kfvukyPudPR0ZVY3N5DRvb07A3Zk" />
     <meta charset="UTF-8">
+    <meta name="google-site-verification" content="qSPpxJaO2s6dwS7kfvukyPudPR0ZVY3N5DRvb07A3Zk" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>熙の日記 | 梓沢ひかり (Azusawa Hikari)</title>
     <meta name="description" content="熙の日記是梓沢ひかり (Azusawa Hikari) 的官方 Lo-fi 音樂企劃入口，收錄 YouTube 播放清單、官方連結與商務聯絡資訊。">
-    <meta name="keywords" content="熙の日記, 梓沢ひかり, Azusawa Hikari, 梓澤熙, Hikari's Diary, official Lo-fi music, Lo-fi Beats, Chillhop">
     <meta name="author" content="Azusawa Hikari">
     <meta name="robots" content="index, follow, max-image-preview:large">
     <meta name="application-name" content="熙の日記">
     <meta name="theme-color" content="#f8f0ea">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
     <link rel="canonical" href="https://hikarisdiary.github.io/">
-    <link rel="alternate" hreflang="zh-TW" href="https://hikarisdiary.github.io/">
-    <link rel="alternate" hreflang="ja" href="https://hikarisdiary.github.io/">
-    <link rel="alternate" hreflang="en" href="https://hikarisdiary.github.io/">
-    <link rel="alternate" hreflang="x-default" href="https://hikarisdiary.github.io/">
     <link rel="me" href="https://www.youtube.com/@azusawa-hikari">
     <link rel="me" href="https://facebook.com/AzusawaHikari">
     <meta property="og:type" content="website">
@@ -24,16 +20,19 @@
     <meta property="og:url" content="https://hikarisdiary.github.io/">
     <meta property="og:title" content="熙の日記 | 梓沢ひかり (Azusawa Hikari)">
     <meta property="og:description" content="熙の日記是梓沢ひかり (Azusawa Hikari) 的官方 Lo-fi 音樂企劃入口，收錄 YouTube 播放清單、官方連結與商務聯絡資訊。">
-    <meta property="og:image" content="https://hikarisdiary.github.io/assets/images/cherry-blossoms.png">
+    <meta property="og:image" content="https://hikarisdiary.github.io/assets/images/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="熙の日記 櫻花背景">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="熙の日記 | 梓沢ひかり (Azusawa Hikari)">
     <meta name="twitter:description" content="官方 Lo-fi 音樂企劃入口，收錄 YouTube 播放清單、官方連結與商務聯絡資訊。">
-    <meta name="twitter:image" content="https://hikarisdiary.github.io/assets/images/cherry-blossoms.png">
+    <meta name="twitter:image" content="https://hikarisdiary.github.io/assets/images/og-image.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;500&family=Poppins:wght@200;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="preload" as="image" href="assets/images/cherry-blossoms.webp">
     <script src="assets/js/main.js" defer></script>
     <script type="application/ld+json">
 {
@@ -44,7 +43,7 @@
       "@id": "https://hikarisdiary.github.io/#website",
       "url": "https://hikarisdiary.github.io/",
       "name": "熙の日記",
-      "dateModified": "2026-07-02T10:08:40+08:00",
+      "dateModified": "2026-07-08T10:08:40+08:00",
       "alternateName": [
         "Hikari's Diary",
         "Azusawa Hikari"
@@ -64,7 +63,7 @@
       "url": "https://hikarisdiary.github.io/",
       "name": "熙の日記 | 梓沢ひかり (Azusawa Hikari)",
       "description": "梓沢ひかり (Azusawa Hikari) 的官方 Lo-fi 音樂企劃與播放清單入口。",
-      "dateModified": "2026-07-02T10:08:40+08:00",
+      "dateModified": "2026-07-08T10:08:40+08:00",
       "isPartOf": {
         "@id": "https://hikarisdiary.github.io/#website"
       },
@@ -88,7 +87,7 @@
       "description": "熙の日記是梓沢ひかり (Azusawa Hikari) 的官方 Lo-fi 音樂企劃入口，收錄 YouTube 播放清單、官方連結與商務聯絡資訊。",
       "disambiguatingDescription": "Official independent Lo-fi music project and profile page for Azusawa Hikari.",
       "url": "https://hikarisdiary.github.io/",
-      "image": "https://hikarisdiary.github.io/assets/images/cherry-blossoms.png",
+      "image": "https://hikarisdiary.github.io/assets/images/og-image.jpg",
       "mainEntityOfPage": {
         "@id": "https://hikarisdiary.github.io/#profile"
       },
@@ -138,10 +137,12 @@
 </head>
 <body>
 
+    <div class="bg-layer" aria-hidden="true"></div>
+
     <main class="container" aria-labelledby="siteTitle">
         <header class="profile">
             <div class="avatar-container">
-                <img src="assets/images/avatar.png" alt="熙の日記 看板娘">
+                <img src="assets/images/avatar.webp" alt="熙の日記 看板娘" width="320" height="320">
             </div>
 
             <h1 class="logo-space" id="siteTitle">熙の日記</h1>
@@ -161,7 +162,7 @@
         </section>
 
         <section class="playlist-embed" aria-label="熙の日記 YouTube 播放清單">
-            <iframe src="https://www.youtube.com/embed/videoseries?si=89TCRjZGggHutukW&amp;list=PLISfAGf85s-c" title="熙の日記 YouTube 播放清單" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/videoseries?list=PLISfAGf85s-c" title="熙の日記 YouTube 播放清單" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </section>
 
         <nav class="links-group" aria-label="官方連結">
@@ -176,9 +177,9 @@
         </footer>
     </main>
 
-    <div id="legalModal" class="modal" aria-hidden="true">
+    <div id="legalModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="legalModalTitle" aria-hidden="true">
         <div class="modal-content">
-            <div class="modal-title">版權宣告</div>
+            <div class="modal-title" id="legalModalTitle">版權宣告</div>
             <div class="modal-text">版權所有,翻印必究</div>
             <button class="close-btn" type="button" id="closeLegalModalButton">關閉視窗 / Close</button>
         </div>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>頁面不存在 | 熙の日記</title>
+    <meta name="robots" content="noindex, follow">
+    <style>
+        :root {
+            --bg-overlay: #fcfaf7;
+            --text-main: #4a4038;
+            --text-sub: #7a6e63;
+            --accent: #d2c2b0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', 'Noto Serif TC', serif;
+            color: var(--text-main);
+            line-height: 1.8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+            background-color: var(--bg-overlay);
+        }
+
+        main {
+            max-width: 480px;
+            width: 100%;
+            text-align: center;
+            background: #ffffff;
+            padding: 40px 30px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(122, 110, 99, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+        h1 {
+            font-size: 1.6rem;
+            font-weight: 500;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 0.95rem;
+            font-weight: 300;
+            color: var(--text-sub);
+            letter-spacing: 0.5px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            border: 1px solid var(--accent);
+            border-radius: 6px;
+            color: var(--text-main);
+            text-decoration: none;
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: var(--text-main);
+            color: #ffffff;
+            border-color: var(--text-main);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>404 - 頁面不存在</h1>
+        <p>找不到您要瀏覽的頁面。<br>Sorry, this page could not be found.</p>
+        <a class="btn" href="/">回到首頁 / Back Home</a>
+    </main>
+</body>
+</html>
